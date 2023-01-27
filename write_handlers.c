@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /************************* WRITE HANDLE *************************/
 /**
  * handle_write_char - Prints a string
@@ -155,7 +155,7 @@ int write_unsgnd(int is_negative, int ind,
 	while (precision > length)
 	{
 		buffer[--ind] = '0';
-		length++
+		length++;
 	}
 	if ((flags & F_ZERO) && !(flags & F_MINUS))
 		padd = '0';
